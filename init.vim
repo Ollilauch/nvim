@@ -17,6 +17,17 @@
  :set shiftwidth=0
  :set expandtab
 
+" Use ctrl-[hjkl] to select the active split!
+ nmap <silent> <c-k> :wincmd k<CR>
+ nmap <silent> <c-j> :wincmd j<CR>
+ nmap <silent> <c-h> :wincmd h<CR>
+ nmap <silent> <c-l> :wincmd l<CR>
+" Use ctrl-[left,up,down,right] to selecte split
+ nmap <silent> <c-Up>       :wincmd k<CR>
+ nmap <silent> <c-Down>     :wincmd j<CR>
+ nmap <silent> <c-Left>     :wincmd h<CR>
+ nmap <silent> <c-Right>    :wincmd l<CR>
+
 " source file of vim-plug
  source $HOME/.config/nvim/vim-plug/plugins.vim
 
